@@ -1,0 +1,24 @@
+﻿<center>
+    @model List<StarWars.Models.Character>
+@{
+    ViewBag.Title = "Jedi";
+}
+    <a class="btn btn-success" href="/home/BountyHunters">Bounty Hunters</a>
+<h2>Jedi</h2>
+<form method="post" action="/Home/Jedi">
+    <input type="text" name="name" placeholder="Enter a Jedi" />
+    <input type="text" name="race" placeholder="Race" />
+    <input type="text" name="sabercolor" placeholder="sabercolor" />
+    <input type="submit" value="Enter!" />
+
+
+
+</form>
+@foreach (var Character in Model)
+{
+    @Character.Name <text>&nbsp;</text><br />
+    @Character.Race    <br />
+
+
+}
+</center>

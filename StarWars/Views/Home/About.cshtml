@@ -1,0 +1,12 @@
+﻿<center>
+    @model List<StarWars.Models.Character>
+    <a class="btn btn-success" href="/home/BountyHunters">Bounty Hunters</a>
+
+    @foreach (var Character in Model)
+    {
+        @Character.Name <text>&nbsp;</text>
+        @Character.Race    <br />
+
+
+    }
+</center>
